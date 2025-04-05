@@ -40,6 +40,7 @@ jobs:
       - name: Update values.yaml
         run: |
           cd check-k8s
+          sed -i 's|tag:.*|tag: '${{ env.APP_VERSION }}'|' values.yaml
           sed -i 's|APP_VERSION:.*|APP_VERSION: '${{ env.APP_VERSION }}'|' values.yaml 
           git config --global user.name 'Bui-Tuan'
           git config --global user.email 'tuanbui13072000@gmail.com'
