@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-DB_HOST = "localhost"
+DB_HOST = "172.27.128.1"
 DB_NAME = "test_chart"
 DB_USER = "postgres"
 DB_PASS = "1"
