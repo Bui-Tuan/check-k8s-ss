@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form index</title>
+</head>
+<body>
+    <h2>Nhập thông tin hàng hóa</h2>
+    <form method="POST" action="/submit">
+        <label>Tên hàng:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Giá hàng:</label><br>
+        <input type="number" step="any" name="cost" required><br><br>
+
+        <label>Số lượng:</label>
+        <input type="number" step="1" name="quantity" required><br><br>
+
+        <input type="submit" value="send">
+    </form>
+    <br>
+    <a href="/monitor">Monitor</a><br>
+    <a href="/output">Output</a>
+</body>
+</html>
